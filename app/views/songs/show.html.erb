@@ -1,0 +1,7 @@
+<h1><%=@songs.name %></h1>
+<ul>
+<li><h2>Artist: <%= link_to("#{@songs.artist.name}", artist_path(@songs.artist))%></h2></li>
+<li><h2>Genre: <%= @songs.genre.name %></h2></li>
+</ul>
+<%= link_to("Back to List of Songs", songs_path)%> 
+<br>
